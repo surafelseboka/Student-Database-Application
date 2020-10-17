@@ -5,7 +5,7 @@ public class student {
 	private String lastName;
 	private int GradeYear;
 	private String studentID;
-	private String courses;
+	private String courses =" ";
 	private int tuitionBalance = 0;
 	private  static int costOfCourse = 600;
 	private static int id = 1000;
@@ -56,10 +56,7 @@ public class student {
 			}
 		} while (1 !=0);
 		
-		
-		//System.out.println("ENROLLED IN: " + courses);
-		
-	}
+			}
 	
 	// View balance 	
 	public void viewBalance() {
@@ -86,11 +83,10 @@ public class student {
 	public String toString() {
 		
 		return "Name: "+ firstName+" "+ lastName +
-				"\nGrade levele: " + GradeYear + 	
+				"\nGrade level: " + GradeYear + 	
 				"\nStudent ID: " + studentID +
 				"\nCourses enrolled: " + courses + 
 				"\nBalance: $"+ tuitionBalance;
-		
-	}	
+			}	
 	
 }
